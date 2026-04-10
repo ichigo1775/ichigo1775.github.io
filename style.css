@@ -18,8 +18,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffb6c1;
+    color: #333;
     padding: 30px 0;
     text-align: center;
 }
@@ -68,7 +68,7 @@ section {
     content: "•";
     position: absolute;
     left: 0;
-    color: #333;
+    color: #ffb6c1;
     font-weight: bold;
 }
 
@@ -120,15 +120,44 @@ section {
     background-color: #f9f9f9;
 }
 
+#course-intro {
+    background-color: #fff;
+}
+
+#course-features {
+    background-color: #f9f9f9;
+}
+
 .course-content {
     text-align: center;
     margin-top: 30px;
 }
 
+.course-content ul {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+.course-content li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.course-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffb6c1;
+    font-weight: bold;
+}
+
 .course-button {
     display: inline-block;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffb6c1;
+    color: #333;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
@@ -137,12 +166,12 @@ section {
 }
 
 .course-button:hover {
-    background-color: #45a049;
+    background-color: #ff99aa;
 }
 
 #contact {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffb6c1;
+    color: #333;
     text-align: center;
 }
 
@@ -151,8 +180,8 @@ section {
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #ff99aa;
+    color: #333;
     text-align: center;
     padding: 20px 0;
 }
