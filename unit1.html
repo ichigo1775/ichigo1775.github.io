@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python入门与环境搭建 - Python基础课程</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #unit-content {
+            background-color: #fff;
+        }
+        
+        .unit-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h3 {
+            margin-bottom: 15px;
+            color: #ffb6c1;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .section ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .section li::before {
+            content: "▸";
+            position: absolute;
+            left: -20px;
+            color: #ffb6c1;
+        }
+        
+        .code-block {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+        }
+        
+        .step-by-step {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .step-by-step h4 {
+            margin-bottom: 10px;
+            color: #ffb6c1;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🐍 Python基础课程</h1>
+            <p>从零开始学习Python编程 🚀</p>
+        </div>
+    </header>
+    
+    <section id="unit-content">
+        <div class="container">
+            <h2>第一章：Python入门与环境搭建 🐍</h2>
+            <div class="unit-content">
+                <a href="python-course.html" class="back-link">← 返回课程大纲</a>
+                
+                <div class="section" id="features">
+                    <h3>1.1 Python的特点和优势 ✨</h3>
+                    <p>Python是一种简单易学、功能强大的编程语言，具有以下特点和优势：</p>
+                    <ul>
+                        <li><strong>语法简洁</strong>：Python的语法非常简洁明了，代码可读性高，学习曲线平缓，适合初学者。</li>
+                        <li><strong>跨平台</strong>：Python可以在Windows、macOS、Linux等多种操作系统上运行。</li>
+                        <li><strong>丰富的库</strong>：Python拥有大量的标准库和第三方库，可以轻松实现各种功能。</li>
+                        <li><strong>用途广泛</strong>：Python可用于Web开发、数据分析、人工智能、自动化脚本等多个领域。</li>
+                        <li><strong>社区活跃</strong>：Python拥有庞大的社区支持，遇到问题时可以快速找到解决方案。</li>
+                    </ul>
+                </div>
+                
+                <div class="section" id="installation">
+                    <h3>1.2 安装Python环境 🛠️</h3>
+                    <p>安装Python环境是学习Python的第一步，下面我们将详细介绍如何在不同操作系统上安装Python。</p>
+                    
+                    <div class="step-by-step">
+                        <h4>Windows系统安装步骤：</h4>
+                        <ol>
+                            <li>访问Python官方网站：<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></li>
+                            <li>点击"Download Python"按钮，下载最新版本的Python安装包。</li>
+                            <li>运行下载的安装包，在安装界面中勾选"Add Python to PATH"选项。</li>
+                            <li>点击"Install Now"按钮，等待安装完成。</li>
+                            <li>安装完成后，打开命令提示符，输入<code>python --version</code>，如果显示Python版本信息，则安装成功。</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="step-by-step">
+                        <h4>macOS系统安装步骤：</h4>
+                        <ol>
+                            <li>访问Python官方网站：<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></li>
+                            <li>点击"Download Python"按钮，下载最新版本的Python安装包。</li>
+                            <li>运行下载的安装包，按照提示完成安装。</li>
+                            <li>安装完成后，打开终端，输入<code>python3 --version</code>，如果显示Python版本信息，则安装成功。</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="step-by-step">
+                        <h4>Linux系统安装步骤：</h4>
+                        <ol>
+                            <li>大多数Linux发行版已经预装了Python，可以通过在终端中输入<code>python3 --version</code>来检查。</li>
+                            <li>如果没有安装Python，可以使用包管理器进行安装：
+                                <ul>
+                                    <li>Ubuntu/Debian：<code>sudo apt install python3</code></li>
+                                    <li>CentOS/RHEL：<code>sudo yum install python3</code></li>
+                                </ul>
+                            </li>
+                            <li>安装完成后，在终端中输入<code>python3 --version</code>，如果显示Python版本信息，则安装成功。</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="section" id="tools">
+                    <h3>1.3 Python开发工具推荐 📝</h3>
+                    <p>选择合适的开发工具可以提高编程效率，以下是几个常用的Python开发工具：</p>
+                    
+                    <ul>
+                        <li><strong>IDLE</strong>：Python自带的集成开发环境，简单易用，适合初学者。</li>
+                        <li><strong>PyCharm</strong>：功能强大的Python IDE，有社区版（免费）和专业版（付费）。</li>
+                        <li><strong>Visual Studio Code</strong>：轻量级代码编辑器，安装Python扩展后可以用于Python开发。</li>
+                        <li><strong>Jupyter Notebook</strong>：交互式笔记本，适合数据分析和学习。</li>
+                    </ul>
+                    
+                    <p>对于初学者，推荐使用IDLE或Visual Studio Code，它们都比较容易上手。</p>
+                </div>
+                
+                <div class="section" id="first-program">
+                    <h3>1.4 第一个Python程序 👨‍💻</h3>
+                    <p>现在，让我们编写第一个Python程序，体验一下Python的魅力！</p>
+                    
+                    <div class="step-by-step">
+                        <h4>使用IDLE编写第一个程序：</h4>
+                        <ol>
+                            <li>打开IDLE（在Windows上可以在开始菜单中找到，在macOS和Linux上可以在终端中输入<code>idle3</code>）。</li>
+                            <li>点击"File" → "New File"，创建一个新的Python文件。</li>
+                            <li>在文件中输入以下代码：
+                                <div class="code-block">
+print("Hello, Python!")
+print("欢迎来到Python的世界！")
+                                </div>
+                            </li>
+                            <li>点击"File" → "Save"，保存文件为<code>hello.py</code>。</li>
+                            <li>点击"Run" → "Run Module"，运行程序。</li>
+                            <li>在IDLE的Shell窗口中，你将看到程序输出的内容。</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="step-by-step">
+                        <h4>使用命令行运行Python程序：</h4>
+                        <ol>
+                            <li>创建一个名为<code>hello.py</code>的文件，内容如下：
+                                <div class="code-block">
+print("Hello, Python!")
+print("欢迎来到Python的世界！")
+                                </div>
+                            </li>
+                            <li>打开命令提示符（Windows）或终端（macOS/Linux）。</li>
+                            <li>导航到保存<code>hello.py</code>的目录。</li>
+                            <li>输入<code>python hello.py</code>（Windows）或<code>python3 hello.py</code>（macOS/Linux），运行程序。</li>
+                            <li>在命令行中，你将看到程序输出的内容。</li>
+                        </ol>
+                    </div>
+                    
+                    <p>恭喜你！你已经成功编写并运行了第一个Python程序。这只是一个简单的开始，在接下来的课程中，我们将学习更多Python的知识和技能。</p>
+                </div>
+                
+                <div class="section">
+                    <h3>小结 📋</h3>
+                    <p>在本单元中，我们学习了：</p>
+                    <ul>
+                        <li>Python的特点和优势</li>
+                        <li>如何在不同操作系统上安装Python环境</li>
+                        <li>常用的Python开发工具</li>
+                        <li>如何编写和运行第一个Python程序</li>
+                    </ul>
+                    <p>现在你已经掌握了Python的基础知识，可以开始学习Python的语法和编程技巧了。</p>
+                </div>
+                
+                <a href="python-course.html" class="back-link">← 返回课程大纲</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Python基础课程. 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+</html>
