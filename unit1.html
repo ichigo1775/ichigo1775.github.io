@@ -301,6 +301,7 @@ print("欢迎来到Python的世界！")
                             <h4>Python代码编辑器</h4>
                             <div class="editor-buttons">
                                 <button class="editor-btn" onclick="runCode()">运行代码</button>
+                                <button class="editor-btn" onclick="resetCode()">重置代码</button>
                                 <button class="editor-btn" onclick="toggleFloating()">悬浮/固定</button>
                                 <button class="editor-btn" onclick="toggleEditor()">折叠/展开</button>
                             </div>
@@ -428,9 +429,18 @@ print("欢迎来到Python的世界！")
             });
         }
         
+        // 初始代码
+        var initialCode = 'print("Hello, Python!\n欢迎来到Python的世界！")\n\n# 尝试修改上面的代码，看看会发生什么\n# 例如：\n# name = input("请输入你的名字：")\n# print("你好，" + name + "！")';
+        
+        // 重置代码功能
+        function resetCode() {
+            editor.setValue(initialCode);
+            document.getElementById('output').innerHTML = '';
+        }
+        
         // 初始化代码编辑器
         var editor = CodeMirror(document.getElementById('code-editor'), {
-            value: 'print("Hello, Python!\n欢迎来到Python的世界！")\n\n# 尝试修改上面的代码，看看会发生什么\n# 例如：\n# name = input("请输入你的名字：")\n# print("你好，" + name + "！")',
+            value: initialCode,
             mode: 'python',
             theme: 'monokai',
             lineNumbers: true,
